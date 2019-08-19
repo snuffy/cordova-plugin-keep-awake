@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordova-plugin-keep-awake" version="0.0.1">
+  <name>Cordova Plugin Keep Awake</name>
+  <description>keep awakeing</description>
+	<engines>
+		<engine name="cordova-android" version=">=7.1.0" />
+	</engines>
+  <js-module src="www/KeepAwake.js" name='KeepAwake' >
+    <clobbers target="KeepAwake" />
+  </js-module>
+
+  <!-- iOS -->
+  <platform name="ios">
+    <config-file target="config.xml" parent="/*">
+      <feature name="KeepAwake">
+        <param name="onload" value="true" />
+        <param name="ios-package" value="CDVKeepAwake" />
+      </feature>
+
+      <preference name="deployment-target" value="10.0" />
+    </config-file>
+
+    <source-file src="src/ios/CDVKeepAwake.swift" />
+    <source-file src="src/ios/CDVKeepAwake-Bridging-Header.h" />
+
+    <dependency id="cordova-plugin-add-swift-support" version="2.0.2"/>
+    <preference name="UseSwiftLanguageVersion" default="4" />
+  </platform>
+</plugin>

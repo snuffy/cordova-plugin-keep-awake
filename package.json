@@ -1,0 +1,34 @@
+{
+  "name": "cordova-plugin-keep-awake",
+  "version": "0.0.1",
+  "description": "cordova-plugin-keep-awake",
+  "cordova" : {
+    "id": "cordova-plugin-keep-awake",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snuffy/cordova-plugin-keep-awake.git"
+  },
+  "author": "snuffy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/snuffy/cordova-plugin-keep-awake/issues"
+  },
+  "dependencies": {
+    "xml2js": "^0.4.19"
+  },
+  "homepage": "https://github.com/snuffy/cordova-plugin-keep-awake#readme",
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-ios",
+    "cordova:plugin",
+    "plugin"
+  ]
+}

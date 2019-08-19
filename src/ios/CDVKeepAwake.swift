@@ -1,15 +1,18 @@
 
 
 @objc(CDVKeepAwake) class CDVKeepAwake : CDVPlugin {
-  override func pluginInitialize() {
-    print("hi");
-  };
+  override func pluginInitialize() {};
 
   @objc func start(_ command: CDVInvokedUrlCommand) {
-    print("hi start");
+    UIApplication.shared.isIdleTimerDisabled = true
+    let result = CDVPluginResult(status: CDVCommandStatus_OK)
+    commandDelegate.send(result, callbackId: command.callbackId)
+    
   }
 
   @objc func stop(_ command: CDVInvokedUrlCommand) {
-    print("hi stop");
+    UIApplication.shared.isIdleTimerDisabled = false
+    let result = CDVPluginResult(status: CDVCommandStatus_OK)
+    commandDelegate.send(result, callbackId: command.callbackId)
   }
 }

@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-keep-awake",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "cordova-plugin-keep-awake",
   "cordova" : {
     "id": "cordova-plugin-keep-awake",

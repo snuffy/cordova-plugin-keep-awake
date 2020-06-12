@@ -5,7 +5,8 @@
   "cordova" : {
     "id": "cordova-plugin-keep-awake",
     "platforms": [
-      "ios"
+      "ios",
+      "android"
     ]
   },
   "main": "index.js",
@@ -28,6 +29,7 @@
   "keywords": [
     "ecosystem:cordova",
     "cordova-ios",
+    "cordova-android",
     "cordova:plugin",
     "plugin"
   ]

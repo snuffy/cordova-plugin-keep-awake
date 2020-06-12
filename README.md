@@ -8,7 +8,7 @@ Using this plug-in, you can control the automatic sleep at any time.
 Install the plugin by adding it to your project's config.xml:
 
 ```
-<plugin name="cordova-plugin-firebasex" spec="latest" />
+<plugin name="cordova-plugin-keep-awake" spec="https://github.com/snuffy/cordova-plugin-keep-awake" />
 ```
 
 or by using cordova CLI

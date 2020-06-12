@@ -2,7 +2,7 @@
 
 var fs = require('fs');
 
-var pluginLocation = 'plugins/cordova-plugin-advance-downloader/scripts/android';
+var pluginLocation = 'plugins/cordova-plugin-keep-awake/scripts/android';
 
 var buildGradle = fs.readFileSync(`platforms/android/build.gradle`);
 if (buildGradle.indexOf('classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"') === -1) {
